@@ -1,1 +1,41 @@
-<p>listing works!</p>
+<div class="doctor-listing">
+    <div class="top-bg">
+        <div class="container">
+            <div class="d-flex user-bar">
+                <div class="profile">
+                    <img src="../../../../assets/img/u1.jpg">
+                </div>
+                <div class="txt flex-grow-1">
+                    <h1>Ilyas Ahmed</h1>
+                    <p>+92 XXX XXXXXXX</p>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 search-input">
+                <input type="text" placeholder="Search Doctor...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="doctor-listing">
+        <div class="container">
+            <div class="d-flex doc-card" *ngFor="let item of doctors">
+                <div class="doc-img">
+                    <img src="{{item.img}}">
+                </div>
+                <div class="flex-grow-1 doc-info">
+                    <h1>{{item.name}}</h1>
+                    <p class="field">{{item.field}}</p>
+                    <p class="education">{{item.education}}</p>
+                    <p class="rating"><i class="fa-solid fa-star"></i>{{item.rating}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

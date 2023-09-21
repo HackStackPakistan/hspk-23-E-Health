@@ -1,0 +1,111 @@
+@import '/src/styles.scss';
+
+.doctor-listing {
+    background-color: white;
+    .top-bg {
+        background-color: #0d6efd;
+        padding: 20px 0px 45px 0px;
+        border-radius: 0 0px 20px 20px;
+        .user-bar {
+            display: flex;
+            align-items: center;
+            .profile {
+                img {
+                    width: 42px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            .txt {
+                padding-left: 15px;
+                h1 {
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: white;
+                    padding-bottom: 3px;
+                }
+                p {
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+            .notification {
+                i {
+                    &.fa-bell {
+                        font-size: 22px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    .search-input {
+        position: relative;
+        bottom: 28px;
+        input {
+            font-size: 16px;
+            border: 1px solid #ccc !important;
+            background-color: #ffffff;
+            padding: 12px 18px 12px 35px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        i {
+            &.fa-magnifying-glass {
+                position: relative;
+                bottom: 37px;
+                left: 10px;
+                font-size: 17px;
+                color: #ccc;
+            }
+        }
+    }
+    .doctor-listing {
+        padding-bottom: 30px;
+        position: relative;
+        bottom: 40px;
+        .doc-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 16px;
+            .doc-img {
+                img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 11px;
+                }
+            }
+            .doc-info {
+                padding-left: 12px;
+                h1 {
+                    color: black;
+                    font-size: 17px;
+                    font-weight: 600;
+                    padding-bottom: 4px;
+                }
+                p {
+                    &.field {
+                        color: silver;
+                        font-size: 15px;
+                    }
+                    &.education {
+                        color: silver;
+                        font-size: 15px;
+                        padding-bottom: 5px;
+                    }
+                    &.rating {
+                        color: black;
+                        font-size: 15px;
+                        font-weight: 600;
+                        i {
+                            font-size: 15px;
+                            color: #ffaf28;
+                            padding-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
