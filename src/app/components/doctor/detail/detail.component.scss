@@ -1,0 +1,42 @@
+@import '/src/styles.scss';
+
+.doctor-detail {
+    background-color: white;
+    .top-bg {
+        background-color: #0d6efd;
+        padding: 20px 0px;
+        border-radius: 0 0px 20px 20px;
+        .user-bar {
+            display: flex;
+            align-items: center;
+            .profile {
+                img {
+                    width: 42px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+            }
+            .txt {
+                padding-left: 15px;
+                h1 {
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: white;
+                    padding-bottom: 3px;
+                }
+                p {
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+            .notification {
+                i {
+                    &.fa-bell {
+                        font-size: 22px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

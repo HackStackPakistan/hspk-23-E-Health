@@ -20,7 +20,7 @@ export class ListingComponent implements OnInit {
       name: "Noel Haueg",
       field: "Otorhinolaryngology",
       education: "MD, PHD, MBBS, FPS, CPS",
-      rating: "4.8"
+      rating: "3.9"
     },
     {
       img: "../../../../assets/img/d3.jpg",
