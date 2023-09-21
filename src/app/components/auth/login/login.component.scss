@@ -84,28 +84,28 @@
                 border-radius: 8px;
             }
         }
-        .socials {
-            padding: 28px 0px;
-            ul {
-                display: flex;
-                list-style: none;
-                margin-bottom: 0px;
-                padding-left: 0px;
-                li {
-                    padding: 0px 10px;
-                    a {
-                        text-decoration: none;
-                        img {
-                            width: 35px;
-                            height: 35px;
-                            border: 1px solid #ccc;
-                            border-radius: 100px;
-                            padding: 6px;
-                        }
-                    }
-                }
-            }
-        }
+        // .socials {
+        //     padding: 28px 0px;
+        //     ul {
+        //         display: flex;
+        //         list-style: none;
+        //         margin-bottom: 0px;
+        //         padding-left: 0px;
+        //         li {
+        //             padding: 0px 10px;
+        //             a {
+        //                 text-decoration: none;
+        //                 img {
+        //                     width: 35px;
+        //                     height: 35px;
+        //                     border: 1px solid #ccc;
+        //                     border-radius: 100px;
+        //                     padding: 6px;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         p {
             &.account-text {
                 font-size: 15px;

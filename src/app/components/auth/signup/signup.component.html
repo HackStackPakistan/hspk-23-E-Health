@@ -3,8 +3,8 @@
         <img src="../../../../assets/img/img1.jpg">
         <div class="login-sinup-btns">
             <div class="container">
-                <a href="">Log In</a>
-                <a href="">Sign Up</a>
+                <a href="" routerLink="/auth/login">Log In</a>
+                <a href="" routerLink="/auth/signup">Sign Up</a>
             </div>
         </div>
     </div>
@@ -12,9 +12,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Welcome back !</h1>
-                    <p class="text-center sub-text">Please enter the details below to continue</p>
+                    <h1>Create an account</h1>
+                    <p class="text-center sub-text">Please enter the details below to get started</p>
                     <form>
+                        <div class="user-name">
+                            <label class="form-label">User name</label>
+                            <input type="text" class="form-control" placeholder="User name">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="full-name">
+                            <label class="form-label">Full name</label>
+                            <input type="text" class="form-control" placeholder="Full name">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="contact-no mb-3">
+                            <label class="form-label">Contact no.</label>
+                            <input type="number" class="form-control" placeholder="Contact no.">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
                         <div class="email">
                           <label class="form-label">Email address</label>
                           <input type="email" class="form-control" placeholder="Email address">
@@ -25,11 +40,6 @@
                           <input type="password" class="form-control" placeholder="Password">
                           <i class="fa-solid fa-lock"></i>
                         </div>
-
-                        <div class="forgot-btn text-end pb-2">
-                            <a href="">Forgot Password?</a>
-                        </div>
-
                         <div class="mb-4 checkbox">
                             <p class="role-text">Choose any one role</p>
                             
@@ -42,16 +52,9 @@
                                 <label class="form-check-label" for="exampleCheck1">as a User</label>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary w-100">Log In</button>
+                        <button type="button" class="btn btn-primary w-100" routerLink="/auth/signup">Sign Up</button>
                     </form>
-                    <div class="socials d-flex justify-content-center">
-                        <ul>
-                            <li><a href=""><img src="../../../../assets/img/s1.png"></a></li>
-                            <li><a href=""><img src="../../../../assets/img/s2.png"></a></li>
-                            <li><a href=""><img src="../../../../assets/img/s3.png"></a></li>
-                        </ul>
-                    </div>
-                    <p class="account-text text-center">Don't have an account? <a href="">Register Now</a></p>
+                    <p class="account-text text-center pt-4">You have an account? <a href="" routerLink="/auth/login">Login</a></p>
                 </div>
             </div>
         </div>

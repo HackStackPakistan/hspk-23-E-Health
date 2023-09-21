@@ -1,6 +1,6 @@
 @import '/src/styles.scss';
 
-.login-screen {
+.signup-screen {
     background-color: white;
     .top-img {
         img {
@@ -48,13 +48,6 @@
                 left: 9px;
                 font-size: 16px;
             }
-            .forgot-btn {
-                a {
-                    color: #0d6efd;
-                    font-size: 16px;
-                    font-weight: 500;
-                }
-            }
             .checkbox {
                 p {
                     &.role-text {
@@ -82,28 +75,6 @@
             }
             .btn {
                 border-radius: 8px;
-            }
-        }
-        .socials {
-            padding: 28px 0px;
-            ul {
-                display: flex;
-                list-style: none;
-                margin-bottom: 0px;
-                padding-left: 0px;
-                li {
-                    padding: 0px 10px;
-                    a {
-                        text-decoration: none;
-                        img {
-                            width: 35px;
-                            height: 35px;
-                            border: 1px solid #ccc;
-                            border-radius: 100px;
-                            padding: 6px;
-                        }
-                    }
-                }
             }
         }
         p {
