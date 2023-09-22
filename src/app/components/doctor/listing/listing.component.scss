@@ -61,7 +61,6 @@
         }
     }
     .doctor-listing {
-        padding-bottom: 30px;
         position: relative;
         bottom: 40px;
         .doc-card {
@@ -86,8 +85,9 @@
                 }
                 p {
                     &.field {
-                        color: silver;
+                        color: black;
                         font-size: 15px;
+                        font-weight: 500;
                     }
                     &.education {
                         color: silver;
@@ -95,11 +95,15 @@
                         padding-bottom: 5px;
                     }
                     &.rating {
-                        color: black;
+                        color: white;
+                        border: 1px solid #0d6efd;
+                        background-color: #0d6efd;
+                        padding: 1px 5px;
+                        width: 63px;
                         font-size: 15px;
-                        font-weight: 600;
+                        border-radius: 50px;
                         i {
-                            font-size: 15px;
+                            font-size: 14px;
                             color: #ffaf28;
                             padding-right: 8px;
                         }

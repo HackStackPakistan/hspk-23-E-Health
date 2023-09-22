@@ -39,4 +39,86 @@
             }
         }
     }
+    .content {
+        padding: 20px 0px 35px 0;
+        position: relative;
+        .doc-info {
+            text-align: center;
+            img {
+                width: 105px;
+                height: 105px;
+                border-radius: 100px;
+                margin-bottom: 10px;
+            }
+            h1 {
+                color: black;
+                font-size: 18px;
+                font-weight: 600;
+                padding-bottom: 2px;
+            }
+            p {
+                &.field {
+                    color: black;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                &.education {
+                    color: silver;
+                    font-size: 15px;
+                }
+                &.rating {
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    border: 1px solid #0d6efd;
+                    background-color: #0d6efd;
+                    padding: 3px 5px;
+                    width: 68px;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 25px;
+                    right: 20px;
+                    i {
+                        font-size: 15px;
+                        color: #ffaf28;
+                        padding-right: 8px;
+                    }
+                }
+            }
+        }
+        .doc-schedule {
+            padding-top: 22px;
+            h1 {
+                &.head {
+                    color: black;
+                    font-size: 17px;
+                    font-weight: 600;
+                    padding-bottom: 11px;
+                }
+            }
+            ul {
+                list-style: none;
+                margin-bottom: 0px;
+                padding-left: 0px;
+                li {
+                    padding-bottom: 5px;
+                    p {
+                        color: black;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        input {
+            border: 1px solid #e7e7e7 !important;
+            background-color: #ffffff;
+            padding: 10px 8px;
+            font-size: 16px;
+            border-radius: 8px;
+            width: 100%;
+        }
+        .btn {
+            border-radius: 8px;
+        }
+    }
 }

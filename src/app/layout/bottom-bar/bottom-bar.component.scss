@@ -1,0 +1,31 @@
+@import '/src/styles.scss';
+
+.bottom-bar {
+    position: fixed; 
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E1DADA;
+    padding: 10px;
+    z-index: 1;
+    background: white;
+    .item {
+        text-align: center;
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    .item-main {
+        width: 48px;
+        height: 48px;
+        background-color: red;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -20px;
+    }
+}
