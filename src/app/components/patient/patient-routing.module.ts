@@ -5,6 +5,7 @@ import { PatientComponent } from './patient.component';
 import { ListingComponent } from './listing/listing.component';
 import { DetailComponent } from './detail/detail.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
+import { HistoryComponent } from './history/history.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'add-edit',
         component: AddEditComponent
+      },
+      {
+        path: 'history',
+        component: HistoryComponent
       }
     ]
   }

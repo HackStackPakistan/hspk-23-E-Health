@@ -1,1 +1,41 @@
-<p>listing works!</p>
+<div class="patient-listing">
+    <div class="top-bg">
+        <div class="container">
+            <div class="d-flex user-bar">
+                <div class="profile">
+                    <img src="../../../../assets/img/u1.jpg">
+                </div>
+                <div class="txt flex-grow-1">
+                    <h1>Ilyas Ahmed</h1>
+                    <p>+92 XXX XXXXXXX</p>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 search-input">
+                <input type="text" placeholder="Search Patient...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+    <div class="listing">
+        <div class="container">
+            <div class="d-flex pat-card" *ngFor="let item of patient" routerLink="/patient/detail">
+                <div class="pat-img">
+                    <img src="{{item.img}}">
+                </div>
+                <div class="flex-grow-1 pat-info">
+                    <h1>{{item.name}}</h1>
+                    <p class="disease">{{item.disease}}</p>
+                    <p class="age">{{item.age}}</p>
+                    <p class="city">{{item.city}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

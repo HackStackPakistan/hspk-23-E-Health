@@ -6,6 +6,7 @@ import { PatientComponent } from './patient.component';
 import { ListingComponent } from './listing/listing.component';
 import { DetailComponent } from './detail/detail.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
+import { HistoryComponent } from './history/history.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AddEditComponent } from './add-edit/add-edit.component';
     PatientComponent,
     ListingComponent,
     DetailComponent,
-    AddEditComponent
+    AddEditComponent,
+    HistoryComponent
   ],
   imports: [
     CommonModule,
