@@ -1,1 +1,44 @@
-<p>header works!</p>
+<div class="header py-3">
+    <div class="container">
+        <div class="toggleContainer" (click)="toggleMenu()" [ngClass]="{'change': toggleButton}">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <!-- <div class="back-btn">
+            <a (click)="back()">
+                <img src="../../../assets/img/arrow-left.svg" alt="<" />
+            </a>
+        </div> -->
+    </div>
+</div>
+
+<div class="sidebar side" [ngClass]="{'show': sidebar}">
+
+    <ul>
+        <li>
+            <div class="profile container">
+                <div class="row">
+                    <div class="col-3 px-0">
+                        <img src="https://dnasolves.com/static/img/michael_vogen.jpg" alt="user" />
+                    </div>
+                    <div class="col-9 px-0">
+                        <p class="text-capitalize pt-2 mb-0">John Doe</p>
+                        <small class="text-white-50">sample@email.com</small>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li *ngFor="let route of routes">
+            <a>{{route.name}}</a>
+        </li>
+
+        <div class="bottom-thing">
+            <a href="tel:03312737076"><i class="fas fa-question-circle"></i> Need Help ?</a>
+        </div>
+    </ul>
+</div>
+
+
+<div class="fade-area"></div>
