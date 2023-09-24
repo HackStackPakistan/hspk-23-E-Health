@@ -1,6 +1,6 @@
 @import '/src/styles.scss';
 
-.history-listing {
+.history-detail {
     background-color: white;
     .top-bg {
         background-color: #0d6efd;
@@ -40,31 +40,32 @@
         }
     }
     .pat-history {
-        padding: 30px 0px;
+        padding-top: 30px;
         h1 {
             font-size: 21px;
             font-weight: 600;
-            padding-bottom: 12px;
+            padding-bottom: 22px;
         }
         .history {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 10px;
             p {
                 font-size: 17px;
                 color: black;
                 padding-bottom: 6px;
-                &.status {
-                    color: white;
-                    border: 1px solid #0d6efd;
-                    background-color: #0d6efd;
-                    padding: 2px 0 0px 0;
-                    width: 108px;
-                    text-align: center;
-                    font-size: 17px;
-                    border-radius: 50px;
+            }
+            .remarks {
+                p {
+                    &.remarks-txt {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: black;
+                        padding-top: 12px;
+                        padding-bottom: 6px;
+                    }
                 }
             }
         }
+    }
+    .btn {
+        border-radius: 8px;
     }
 }

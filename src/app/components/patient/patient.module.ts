@@ -7,6 +7,7 @@ import { ListingComponent } from './listing/listing.component';
 import { DetailComponent } from './detail/detail.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { HistoryComponent } from './history/history.component';
+import { HistoryDetailComponent } from './history-detail/history-detail.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { HistoryComponent } from './history/history.component';
     ListingComponent,
     DetailComponent,
     AddEditComponent,
-    HistoryComponent
+    HistoryComponent,
+    HistoryDetailComponent
   ],
   imports: [
     CommonModule,

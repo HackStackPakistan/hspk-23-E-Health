@@ -6,6 +6,7 @@ import { ListingComponent } from './listing/listing.component';
 import { DetailComponent } from './detail/detail.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { HistoryComponent } from './history/history.component';
+import { HistoryDetailComponent } from './history-detail/history-detail.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'history',
         component: HistoryComponent
+      },
+      {
+        path: 'history-detail',
+        component: HistoryDetailComponent
       }
     ]
   }
