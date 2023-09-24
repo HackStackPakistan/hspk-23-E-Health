@@ -57,47 +57,30 @@
                 padding-bottom: 2px;
             }
             p {
-                &.field {
+                &.disease {
                     color: black;
                     font-size: 15px;
                     font-weight: 500;
                 }
-                &.education {
+                &.age {
                     color: silver;
                     font-size: 15px;
                 }
-            }
-        }
-        .doc-schedule {
-            padding-top: 22px;
-            h1 {
-                &.head {
-                    color: black;
-                    font-size: 17px;
-                    font-weight: 600;
-                    padding-bottom: 11px;
-                }
-            }
-            ul {
-                list-style: none;
-                margin-bottom: 0px;
-                padding-left: 0px;
-                li {
-                    padding-bottom: 5px;
-                    p {
-                        color: black;
-                        font-size: 16px;
+                span {
+                    &.city {
+                        color: silver;
+                        font-size: 15px;
                     }
                 }
             }
         }
-        input {
-            border: 1px solid #e7e7e7 !important;
-            background-color: #ffffff;
-            padding: 10px 8px;
-            font-size: 16px;
-            border-radius: 8px;
-            width: 100%;
+        .doc-time {
+            padding-top: 30px;
+            p {
+                font-size: 17px;
+                color: black;
+                padding-bottom: 8px;
+            }
         }
         .btn {
             border-radius: 8px;

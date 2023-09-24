@@ -18,10 +18,6 @@ const routes: Routes = [
     path: 'patient',
     loadChildren: () => import('./components/patient/patient.module').then(m => m.PatientModule)
   },
-  {
-    path: 'appointments',
-    loadChildren: () => import('./components/appointments/appointments.module').then(m => m.AppointmentsModule)
-  },
 ];
 
 @NgModule({
