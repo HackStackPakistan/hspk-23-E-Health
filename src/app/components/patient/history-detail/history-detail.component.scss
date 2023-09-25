@@ -39,33 +39,70 @@
             }
         }
     }
-    .pat-history {
-        padding-top: 30px;
-        h1 {
-            font-size: 21px;
-            font-weight: 600;
-            padding-bottom: 22px;
-        }
-        .history {
-            p {
-                font-size: 17px;
-                color: black;
-                padding-bottom: 6px;
+    .content {
+        padding: 20px 0px 35px 0;
+        position: relative;
+        .doc-info {
+            position: relative;
+            text-align: center;
+            img {
+                width: 105px;
+                height: 105px;
+                border-radius: 100px;
+                margin-bottom: 10px;
             }
-            .remarks {
-                p {
-                    &.remarks-txt {
-                        font-size: 18px;
-                        font-weight: 500;
-                        color: black;
-                        padding-top: 12px;
-                        padding-bottom: 6px;
-                    }
+            h1 {
+                color: black;
+                font-size: 18px;
+                font-weight: 600;
+                padding-bottom: 2px;
+            }
+            p {
+                &.field {
+                    color: black;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                &.disease {
+                    color: black;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                &.date {
+                    color: silver;
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+                &.status {
+                    color: white;
+                    border: 1px solid #0d6efd;
+                    background-color: #0d6efd;
+                    padding: 2px 0 0px 0;
+                    width: 104px;
+                    text-align: center;
+                    font-size: 16px;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
                 }
             }
         }
-    }
-    .btn {
-        border-radius: 8px;
+        .remarks {
+            p {
+                &.rem-head {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: black;
+                    padding-top: 22px;
+                    padding-bottom: 5px;
+                }
+                &.rem-txt{
+                    font-size: 16px;
+                    color: black;
+                    line-height: 1.6;
+                }
+            }
+        }
     }
 }
