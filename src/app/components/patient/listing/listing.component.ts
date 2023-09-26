@@ -14,6 +14,7 @@ export class ListingComponent implements OnInit {
       disease: "Blood poisoning",
       age: "35 Years",
       city: "Chicago",
+      status: 'upcoming'
     },
     {
       img: "../../../../assets/img/p1.jpg",
@@ -21,6 +22,7 @@ export class ListingComponent implements OnInit {
       disease: "Yellow fever",
       age: "40 Years",
       city: "Houston",
+      status: 'upcoming'
     },
     {
       img: "../../../../assets/img/p5.jpg",
@@ -28,6 +30,7 @@ export class ListingComponent implements OnInit {
       disease: "Lyme disease",
       age: "42 Years",
       city: "New York",
+      status: 'compeleted'
     },
     {
       img: "../../../../assets/img/p4.jpg",
@@ -35,6 +38,7 @@ export class ListingComponent implements OnInit {
       disease: "Chickenpox",
       age: "49 Years",
       city: "Los Angeles",
+      status: 'compeleted'
     },
     {
       img: "../../../../assets/img/p3.jpg",
@@ -42,6 +46,7 @@ export class ListingComponent implements OnInit {
       disease: "Diabetes",
       age: "39 Years",
       city: "San Francisco",
+      status: 'compeleted'
     },
   ]
 

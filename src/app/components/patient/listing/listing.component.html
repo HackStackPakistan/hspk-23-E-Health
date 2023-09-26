@@ -1,20 +1,4 @@
 <div class="patient-listing">
-    <div class="top-bg">
-        <div class="container">
-            <div class="d-flex user-bar">
-                <div class="profile">
-                    <img src="../../../../assets/img/p2.jpg">
-                </div>
-                <div class="txt flex-grow-1">
-                    <h1>Ilyas Ahmed</h1>
-                    <p>+92 XXX XXXXXXX</p>
-                </div>
-                <div class="notification">
-                    <i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-12 search-input">
@@ -34,6 +18,10 @@
                     <p class="disease">{{item.disease}}</p>
                     <p class="age">{{item.age}}</p>
                     <p class="city">{{item.city}}</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-clock text-warning" *ngIf="item.status == 'upcoming'"></i>
+                    <i class="fa-regular fa-circle-check text-success" *ngIf="item.status == 'compeleted'"></i>
                 </div>
             </div>
         </div>
