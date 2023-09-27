@@ -14,10 +14,10 @@ export class HeaderComponent {
   backBtnState: boolean = false;
 
   routes: any = [
-    { name: "Home", path: '/'},
-    { name: "About", path: '/'},
-    { name: "Finances", path: '/'},
-    { name: "Insurance", path: '/'},
+    { name: "Doctors", path: '/doctor/listing'},
+    { name: "Patients", path: '/patient/listing'},
+    { name: "History", path: '/patient/history'},
+    { name: "Log In", path: '/auth/login'},
   ]
 
   constructor(
