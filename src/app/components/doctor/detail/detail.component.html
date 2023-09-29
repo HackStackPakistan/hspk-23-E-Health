@@ -21,10 +21,12 @@
                             <li><p>Sunday: 11:00 AM to 03:00 PM</p></li>
                         </ul>
                     </div>
-                    <div class="confirm-date pt-4">
-                        <input type="date" placeholder="Confirm your date">
-                        <button type="button" class="btn btn-primary w-100 mt-3" routerLink="/doctor/listing">Confirm Date</button>
-                    </div>
+                    <form [formGroup]="programForm">
+                        <div class="confirm-date pt-4">
+                            <input type="date" placeholder="Confirm your date" class="form-control" formControlName="date">
+                            <button type="button" class="btn btn-primary w-100 mt-3" routerLink="/doctor/listing">Confirm Date</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

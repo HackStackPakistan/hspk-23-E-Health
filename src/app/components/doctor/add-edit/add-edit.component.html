@@ -3,26 +3,26 @@
         <div class="row">
             <div class="col-12">
                 <h1>Edit your profile</h1>
-                <form>
+                <form [formGroup]="programForm">
                     <div class="full-name mb-3">
                         <label class="form-label">Full name</label>
-                        <input type="text" class="form-control" placeholder="Full name">
+                        <input type="text" class="form-control" placeholder="Full name" formControlName="fullName">
                     </div>
                     <div class="field mb-3">
                         <label class="form-label">Field</label>
-                        <input type="text" class="form-control" placeholder="Field">
+                        <input type="text" class="form-control" placeholder="Field" formControlName="field">
                     </div>
                     <div class="education mb-3">
                         <label class="form-label">Education</label>
-                        <input type="number" class="form-control" placeholder="Education">
+                        <input type="number" class="form-control" placeholder="Education" formControlName="education">
                     </div>
                     <div class="email mb-3">
                       <label class="form-label">Email address</label>
-                      <input type="email" class="form-control" placeholder="Email address">
+                      <input type="email" class="form-control" placeholder="Email address" formControlName="email">
                     </div>
                     <div class="password mb-3">
                       <label class="form-label">Password</label>
-                      <input type="password" class="form-control" placeholder="Password">
+                      <input type="password" class="form-control" placeholder="Password" formControlName="password">
                     </div>
                     <button type="button" class="btn btn-primary w-100 mt-2" routerLink="/patient/listing" routerLink="/patient/listing">Save</button>
                 </form>
