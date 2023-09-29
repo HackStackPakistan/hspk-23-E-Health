@@ -14,15 +14,15 @@
                 <div class="col-12">
                     <h1>Welcome back !</h1>
                     <p class="text-center sub-text">Please enter the details below to continue</p>
-                    <form>
+                    <form [formGroup]="programForm">
                         <div class="email">
                           <label class="form-label">Email address</label>
-                          <input type="email" class="form-control" placeholder="Email address">
+                          <input type="email" class="form-control" placeholder="Email address" formControlName="email">
                           <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div class="password">
                           <label class="form-label">Password</label>
-                          <input type="password" class="form-control" placeholder="Password">
+                          <input type="password" class="form-control" placeholder="Password" formControlName="password">
                           <i class="fa-solid fa-lock"></i>
                         </div>
                         <div class="forgot-btn text-end pb-2">
@@ -32,11 +32,11 @@
                             <p class="role-text">Choose any one role</p>
                             
                             <div class="role">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="asDoctor">
                                 <label class="form-check-label" for="exampleCheck1">as a Doctor</label>
                             </div>
                             <div class="role pt-1">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" formControlName="asPatient">
                                 <label class="form-check-label" for="exampleCheck1">as a Patient</label>
                             </div>
                         </div>

@@ -31,11 +31,11 @@
             </div>
         </li>
         <li *ngFor="let route of routes">
-            <a>{{route.name}}</a>
+            <a (click)="navigateTo(route)">{{route.name}}</a>
         </li>
 
         <div class="bottom-thing">
-            <a href="tel:03312737076"><i class="fas fa-question-circle"></i> Need Help ?</a>
+            <a href="tel:+923337148980"><i class="fas fa-question-circle"></i> Need Help ?</a>
         </div>
     </ul>
 </div>

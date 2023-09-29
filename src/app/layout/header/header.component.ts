@@ -1,5 +1,6 @@
 import { Location } from '@angular/common'
 import { Component, HostListener, Inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -22,7 +23,12 @@ export class HeaderComponent {
 
   constructor(
     private location: Location,
+    private router: Router,
   ) {}
+
+  navigateTo(route: any) {
+    console.log(route);
+  }
 
   toggleMenu() {
     // animating icon
