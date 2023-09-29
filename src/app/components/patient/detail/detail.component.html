@@ -25,10 +25,12 @@
                     <button type="button" class="btn btn-primary w-100 mt-4" routerLink="/patient/history">View History</button>
                     <hr>
                 </div>
-                <div class="remarks">
-                    <textarea class="form-control" placeholder="Add Remarks Here" style="height: 100px"></textarea>
-                    <button type="button" class="btn btn-primary w-100 mt-4">Add Remarks</button>
-                </div>
+                <form [formGroup]="programForm">
+                    <div class="remarks">
+                        <textarea class="form-control" placeholder="Add Remarks Here" style="height: 100px" formControlName="remarks"></textarea>
+                        <button type="button" class="btn btn-primary w-100 mt-4">Add Remarks</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
