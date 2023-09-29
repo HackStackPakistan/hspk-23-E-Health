@@ -3,38 +3,38 @@
         <div class="row">
             <div class="col-12">
                 <h1>Edit your profile</h1>
-                <form>
+                <form [formGroup]="programForm">
                     <div class="user-name mb-3">
                         <label class="form-label">User name</label>
-                        <input type="text" class="form-control" placeholder="User name">
+                        <input type="text" class="form-control" placeholder="User name" formControlName="userName">
                     </div>
                     <div class="full-name mb-3">
                         <label class="form-label">Full name</label>
-                        <input type="text" class="form-control" placeholder="Full name">
+                        <input type="text" class="form-control" placeholder="Full name" formControlName="fullName">
                     </div>
                     <div class="disease mb-3">
                         <label class="form-label">Disease</label>
-                        <input type="text" class="form-control" placeholder="Disease">
+                        <input type="text" class="form-control" placeholder="Disease" formControlName="disease">
                     </div>
                     <div class="contact-no mb-3">
                         <label class="form-label">Contact no.</label>
-                        <input type="number" class="form-control" placeholder="Contact no.">
+                        <input type="number" class="form-control" placeholder="Contact no." formControlName="contactNo">
                     </div>
                     <div class="age mb-3">
                         <label class="form-label">Age</label>
-                        <input type="number" class="form-control" placeholder="Age">
+                        <input type="number" class="form-control" placeholder="Age" formControlName="age">
                     </div>
                     <div class="city mb-3">
                         <label class="form-label">City</label>
-                        <input type="text" class="form-control" placeholder="City">
+                        <input type="text" class="form-control" placeholder="City" formControlName="city">
                     </div>
                     <div class="email mb-3">
                       <label class="form-label">Email address</label>
-                      <input type="email" class="form-control" placeholder="Email address">
+                      <input type="email" class="form-control" placeholder="Email address" formControlName="email">
                     </div>
                     <div class="password mb-3">
                       <label class="form-label">Password</label>
-                      <input type="password" class="form-control" placeholder="Password">
+                      <input type="password" class="form-control" placeholder="Password" formControlName="password">
                     </div>
                     <button type="button" class="btn btn-primary w-100 mt-3" routerLink="/patient/listing" routerLink="/patient/listing">Save</button>
                 </form>

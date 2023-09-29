@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 import { PatientRoutingModule } from './patient-routing.module';
 import { PatientComponent } from './patient.component';
 import { ListingComponent } from './listing/listing.component';
@@ -21,7 +24,10 @@ import { HistoryDetailComponent } from './history-detail/history-detail.componen
   ],
   imports: [
     CommonModule,
-    PatientRoutingModule
+    PatientRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class PatientModule { }
